@@ -3,14 +3,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import { faGooglePlay, faApple } from '@fortawesome/free-brands-svg-icons';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import '../styles/Home.css';
 import Typed from 'typed.js';
 import '../styles/TypingEffect.css';
-import scrollToSection from '../components/Navbar.js';
+
 
 const Home = () => {
   const typingRef = useRef(null);
@@ -521,21 +520,21 @@ const Home = () => {
                     <FontAwesomeIcon icon={faMapMarkerAlt} className="contact-icon me-3 mt-1" />
                     <div>
                       <h5>Address</h5>
-                        <p>Prestige Shantiniketan,Tower B, 10th Floor, Whitefield Main Road, Bangalore- 560048, Karnataka (IN)</p>
+                        <p>Kishangarh, Jaipur, Rajasthan (IN)</p>
                       </div>
                   </div>
                   <div className="d-flex mb-3">
                     <FontAwesomeIcon icon={faPhone} className="contact-icon me-3 mt-1" />
                     <div>
                       <h5>Phone</h5>
-                        <p>08043714196</p>
+                        <p>+91 9414436977</p>
                       </div>
                   </div>
                   <div className="d-flex mb-3">
                     <FontAwesomeIcon icon={faEnvelope} className="contact-icon me-3 mt-1" />
                     <div>
                       <h5>Email</h5>
-                        <p>connect@aivi.in</p>
+                        <p>abhishekporwal836@gmail.com</p>
                       </div>
                   </div>
                 </div>

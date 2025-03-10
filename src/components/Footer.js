@@ -70,68 +70,6 @@ const Footer = () => {
             </ul>
           </Col>
           
-          <Col lg={2} md={4} sm={6} className="footer-menu">
-            <h5 className="widget-title text-uppercase">Our Solutions</h5>
-            <ul className="list-unstyled">
-              <li>
-                <button 
-                  onClick={() => {
-                    if (location.pathname !== "/") {
-                      window.location.href = "/";
-                      setTimeout(() => {
-                        const swiper = document.querySelector('.swiper').swiper;
-                        swiper.slideTo(0);
-                      }, 500);
-                    } else {
-                      const swiper = document.querySelector('.swiper').swiper;
-                      swiper.slideTo(0);
-                    }
-                  }} 
-                  className="footer-link"
-                >
-                  Regreen.Earth
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => {
-                    if (location.pathname !== "/") {
-                      window.location.href = "/";
-                      setTimeout(() => {
-                        const swiper = document.querySelector('.swiper').swiper;
-                        swiper.slideTo(1);
-                      }, 500);
-                    } else {
-                      const swiper = document.querySelector('.swiper').swiper;
-                      swiper.slideTo(1);
-                    }
-                  }} 
-                  className="footer-link"
-                >
-                  ESG Insight
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => {
-                    if (location.pathname !== "/") {
-                      window.location.href = "/";
-                      setTimeout(() => {
-                        const swiper = document.querySelector('.swiper').swiper;
-                        swiper.slideTo(2);
-                      }, 500);
-                    } else {
-                      const swiper = document.querySelector('.swiper').swiper;
-                      swiper.slideTo(2);
-                    }
-                  }} 
-                  className="footer-link"
-                >
-                  Plasticured
-                </button>
-              </li>
-            </ul>
-          </Col>
 
           <Col lg={2} md={4} sm={6} className="footer-menu">
             <h5 className="widget-title text-uppercase">Help Desk</h5>
@@ -160,16 +98,16 @@ const Footer = () => {
           <Col lg={3} md={6} sm={6} className="footer-menu">
             <h5 className="widget-title text-uppercase">Contact Us</h5>
             <ul className="list-unstyled contact-info">
-              <li>Email: connect@aivi.in</li>
-              <li>Phone: 08043714196</li>
-              <li className="address">Address: Prestige Shantiniketan,Tower B, 10th Floor, Whitefield Main Road, Bangalore- 560048, Karnataka (IN)</li>
+              <li>Email: abhishekporwal836@gmail.com</li>
+              <li>Phone: +91 9414436977</li>
+              <li className="address">Address: Kishangarh, Jaipur, Rajasthan (IN)</li>
             </ul>
           </Col>
           
           <Col lg={2} md={6} sm={6} className="footer-menu">
             <h5 className="widget-title text-uppercase">Follow Us</h5>
             <div className="social-icons">
-              <a href="https://www.linkedin.com/company/aiviin" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <a href="https://www.linkedin.com/in/abhishek-porwal-015517226/" target="_blank" rel="noopener noreferrer" className="social-icon">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
@@ -188,7 +126,7 @@ const Footer = () => {
         <Row className="footer-bottom">
           <Col className="text-center py-3">
             <p className="mb-0">
-              © {new Date().getFullYear()} Bandhure Solutions LLP All rights reserved.
+              © {new Date().getFullYear()} Golden Granites Private Limited All rights reserved.
             </p>
           </Col>
         </Row>

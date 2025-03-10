@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8aac2dbd.css",
+    "main.js": "/static/js/main.c1e48970.js",
+    "static/media/home-back1.jpg": "/static/media/home-back1.bbc84e092df4df5ffe2c.jpg",
+    "static/media/ecostrat-logo.jpg": "/static/media/ecostrat-logo.09d6717b793f5f137068.jpg",
+    "static/media/aivi-logo.png": "/static/media/aivi-logo.f09e53b06ac0dcc22e68.png",
+    "static/media/regreen-logo.jpg": "/static/media/regreen-logo.5233678d192aeb4a83cc.jpg",
+    "static/media/plasticure-logo.jpg": "/static/media/plasticure-logo.cf729930125abe42346e.jpg",
+    "index.html": "/index.html",
+    "main.8aac2dbd.css.map": "/static/css/main.8aac2dbd.css.map",
+    "main.c1e48970.js.map": "/static/js/main.c1e48970.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8aac2dbd.css",
+    "static/js/main.c1e48970.js"
+  ]
+}
