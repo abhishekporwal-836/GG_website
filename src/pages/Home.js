@@ -404,7 +404,7 @@ const Home = () => {
           <div className="row mt-5">
             <div className="col-md-12 text-center">
               <a 
-                href="#featured-products"
+                href="/cart"
                 className="btn btn-medium btn-arrow position-relative"
               >
                 <span className="text-uppercase">View All Products</span>

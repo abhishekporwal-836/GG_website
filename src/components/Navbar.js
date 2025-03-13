@@ -10,13 +10,19 @@ const Navbar = () => {
   const location = useLocation();
   
   useEffect(() => {
+    // If we're on the cart page, set active section to featured-products
+    if (location.pathname === '/cart') {
+      setActiveSection('featured-products');
+      return;
+    }
+
     const handleScroll = () => {
       const sections = ['billboard', 'quick-nav', 'about-us', 'featured-products', 'blog', 'contact'];
       const scrollPosition = window.scrollY;
       const viewportHeight = window.innerHeight;
-      const threshold = viewportHeight * 0.3; // 30% of viewport height
+      const threshold = viewportHeight * 0.3;
 
-      for (const section of sections.reverse()) { // Check from bottom to top
+      for (const section of sections.reverse()) {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
@@ -29,19 +35,21 @@ const Navbar = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Call once on mount
+    handleScroll();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [location.pathname]);
   
   const scrollToSection = (sectionId) => {
-    // Close mobile menu if open
     setShowOffcanvas(false);
     
-    // Update active section immediately on click
-    setActiveSection(sectionId);
+    // If we're on the cart page and clicking shop, navigate to home page's shop section
+    if (location.pathname === '/cart' && sectionId === 'featured-products') {
+      window.location.href = '/#featured-products';
+      return;
+    }
     
     // If we're not on the home page, navigate there first
     if (location.pathname !== "/") {
@@ -49,7 +57,6 @@ const Navbar = () => {
       return;
     }
     
-    // Get the element to scroll to
     const element = document.getElementById(sectionId);
     if (element) {
       const headerOffset = 55;
@@ -132,7 +139,7 @@ const Navbar = () => {
                 </Nav.Link>
                 <Nav.Link 
                   onClick={() => scrollToSection('featured-products')} 
-                  className={`me-4 ${activeSection === 'featured-products' ? 'active' : ''}`}
+                  className={`me-4 ${activeSection === 'featured-products' || location.pathname === '/cart' ? 'active' : ''}`}
                 >
                   Shop
                 </Nav.Link>
