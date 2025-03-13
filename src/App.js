@@ -8,8 +8,10 @@ import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Cart from './pages/Cart';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/App.css';
+import './styles/WhatsAppButton.css';
 
 // ScrollToTop component to handle hash navigation and smooth scrolling
 const ScrollToTop = () => {
@@ -49,6 +51,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
+        <WhatsAppButton />
         <Footer />
       </div>
     </Router>

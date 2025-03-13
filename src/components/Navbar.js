@@ -17,25 +17,41 @@ const Navbar = () => {
     }
 
     const handleScroll = () => {
-      const sections = ['billboard', 'quick-nav', 'about-us', 'featured-products', 'blog', 'contact'];
-      const scrollPosition = window.scrollY;
-      const viewportHeight = window.innerHeight;
-      const threshold = viewportHeight * 0.3;
+      const sections = ['billboard', 'featured-products', 'blog', 'about-us', 'contact'];
+      const scrollPosition = window.scrollY + 100; // Adjusted offset for better detection
 
-      for (const section of sections.reverse()) {
+      // Find all section elements and their positions
+      const sectionPositions = sections.map(section => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          if (rect.top <= threshold) {
-            setActiveSection(section);
-            break;
-          }
+          return {
+            id: section,
+            top: rect.top + window.pageYOffset,
+            bottom: rect.bottom + window.pageYOffset
+          };
+        }
+        return null;
+      }).filter(Boolean);
+
+      // Find the current active section
+      for (let i = 0; i < sectionPositions.length; i++) {
+        const current = sectionPositions[i];
+        const next = sectionPositions[i + 1];
+
+        if (
+          scrollPosition >= current.top &&
+          (!next || scrollPosition < next.top)
+        ) {
+          setActiveSection(current.id);
+          break;
         }
       }
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll();
+    // Initial check
+    setTimeout(handleScroll, 100);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -59,7 +75,7 @@ const Navbar = () => {
     
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerOffset = 55;
+      const headerOffset = 80; // Increased offset for better positioning
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
       
@@ -126,18 +142,6 @@ const Navbar = () => {
                   Home
                 </Nav.Link>
                 <Nav.Link 
-                  onClick={() => scrollToSection('quick-nav')} 
-                  className={`me-4 ${activeSection === 'quick-nav' ? 'active' : ''}`}
-                >
-                  Our Solutions
-                </Nav.Link>
-                <Nav.Link 
-                  onClick={() => scrollToSection('about-us')} 
-                  className={`me-4 ${activeSection === 'about-us' ? 'active' : ''}`}
-                >
-                  About Us
-                </Nav.Link>
-                <Nav.Link 
                   onClick={() => scrollToSection('featured-products')} 
                   className={`me-4 ${activeSection === 'featured-products' || location.pathname === '/cart' ? 'active' : ''}`}
                 >
@@ -147,7 +151,13 @@ const Navbar = () => {
                   onClick={() => scrollToSection('blog')} 
                   className={`me-4 ${activeSection === 'blog' ? 'active' : ''}`}
                 >
-                  Blog
+                  Outlets
+                </Nav.Link>
+                <Nav.Link 
+                  onClick={() => scrollToSection('about-us')} 
+                  className={`me-4 ${activeSection === 'about-us' ? 'active' : ''}`}
+                >
+                  About Us
                 </Nav.Link>
                 <Nav.Link 
                   onClick={() => scrollToSection('contact')}

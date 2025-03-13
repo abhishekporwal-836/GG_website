@@ -146,31 +146,31 @@ const Home = () => {
   const featuredProducts = [
     {
       id: 1,
-      name: ' PlastiCure 4" Pot',
+      name: 'Black Galaxy',
       price: 250,
-      image: '/images/pot-4.jpg',
-      category: 'Aesthetic Pots'
+      image: '/images/brick.jpg',
+      category: 'Aesthetic Black'
     },
     {
       id: 2,
-      name: 'PlastiCure 6" Pot',
+      name: 'Alaska White',
       price: 350,
       image: '/images/pot-6.jpg',
-      category: 'Aesthetic Pots'
+      category: 'Aesthetic White'
     },
     {
       id: 3,
-      name: 'PlastiCure 9" Pot',
+      name: 'Imperial Gold',
       price: 450,
       image: '/images/pot-9.png',
-      category: 'Aesthetic Pots'
+      category: 'Aesthetic Gold'
     },
     {
       id: 4,
-      name: 'Pavement Brick',
-      price: 40,
+      name: 'Ravishing Red',
+      price: 400,
       image: '/images/brick.jpg',
-      category: 'Construction Supplies'
+      category: 'Aesthetic Red'
     }
   ];
 
@@ -180,28 +180,28 @@ const Home = () => {
       id: 1,
       title: 'Plant today for a thriving tomorrow.',
       excerpt: "At ReGreen.Earth, we believe that every action counts. Our mission is to empower individuals to make a difference through simple, effective, and engaging digital experiences. By turning tree planting into a game, we're not just saving the planet—we're making sustainability fun and accessible for all.",
-      date: 'August 17, 2024',
+      date: 'From 2021',
       image: '/images/blog-1.jpg',
-      author: 'Ashwani Gautam',
-      link: 'https://www.instagram.com/myiibs/p/C-wxIL0tP4a/?img_index=1'
+      author: 'Factory Outlet Kishangarh',
+      link: 'https://maps.app.goo.gl/BsREGc8742TajCio8'
     },
     {
       id: 2,
       title: 'Multiplying Actions, Accelerating Efforts',
       excerpt: 'We make sustainability fun and engaging through gamified experiences. Swipe to plant trees, upload pics for transparency, and earn rewards while saving the planet.',
-      date: 'December 12, 2024',
+      date: 'From 2022',
       image: '/images/blog-2.png',
-      author: 'Ashwani Gautam',
-      link: 'https://www.linkedin.com/company/103325581/admin/page-posts/published/'
+      author: 'Retail Outlet Kishangarh',
+      link: 'https://maps.app.goo.gl/BsREGc8742TajCio8'
     },
     {
       id: 3,
       title: 'Intergovernmental Panel on Climate Change (IPCC)',
       excerpt: 'The Intergovernmental Panel on Climate Change (IPCC) is a United Nations body that assesses climate change science. The IPCC provides scientific information to governments to help them develop climate policies.',
-      date: 'January 20, 2023',
+      date: 'From 2025',
       image: '/images/blog-3.jpg',
-      author: 'IPCC',
-      link: 'https://www.ipcc.ch/'
+      author: 'Retail Outlet Vijaynagra',
+      link: 'https://maps.app.goo.gl/BsREGc8742TajCio8'
     }
   ];
 
@@ -245,132 +245,14 @@ const Home = () => {
         </Swiper>
       </section>
 
-      {/* Quick Navigation Section */}
-      <section id="quick-nav" className="padding-medium bg-light">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-12 text-center mb-5">
-              <h2 className="section-title">Our Solutions</h2>
-              <p className="section-subtitle">Discover our innovative environmental solutions</p>
-            </div>
-          </div>
-          <div className="row g-4 justify-content-center">
-            <div className="col-md-4">
-              <div className="solution-card">
-                <div className="solution-card-content">
-                  <div className="solution-icon">
-                    <img src={require("../assets/images/regreen-logo.jpg")} alt="Regreen.Earth" className="img-fluid" />
-                  </div>
-                  <h3>regreen.earth</h3>
-                  <h6>Technology based solution for IPCC Tier 1b methododly for Settlement area</h6>
-                </div>
-                <div className="solution-overlay">
-                  <div className="overlay-content">
-                    <h5>IPCC TIER 1B methodology (settlement area)  for Data collection , Validating  and Reporting</h5>
-                    <ul>
-                      <li>Reporting inventory data as per IPCC guidelines</li>                      
-                      <li>Scientific Method for Carbon Sequestration calculation as defined by authorities</li>
-                      <li>Multiple Tier data collection, validation process</li>  
-                    </ul>
-                  </div>
-                </div>
-                <div className="button-container">
-                  <button className="btn" onClick={() => window.open("https://pcb.regreen.earth", "_blank")}  >Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="solution-card">
-                <div className="solution-card-content">
-                  <div className="solution-icon">
-                    <img src={require("../assets/images/ecostrat-logo.jpg")} alt="ESG Insight" className="img-fluid" />
-                  </div>
-                  <h3>EcoStrat.AI</h3>
-                  <h6>Auto compliance checker for BRSR ,IFRS, GRI, SASB and other ESG standards </h6>
-                    </div>
-                <div className="solution-overlay">
-                  <div className="overlay-content">
-                    <h5>Optimized ESG STRATEGY with our AI-driven solution for sustainable growth.</h5>
-                    <ul>
-                      <li>Compliance Analysis BRSR , IFRS , GRI , SASB , TCFD , ISSB Standards.</li>
-                      <li>Contextual Questions for understanding.</li>
-                      <li>References and Reasoning for answers.</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="button-container">
-                  <button className="btn" onClick={() => window.open("https://bot.regreen.earth/", "_blank")}  >Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="solution-card">
-                <div className="solution-card-content">
-                  <div className="solution-icon">
-                    <img src={require("../assets/images/plasticure-logo.jpg")} alt="Plasticure" className="img-fluid" />
-                  </div>
-                  <h3>PlastiCured</h3>
-                  <h6>Circonomy products that reduced scope 3 emissions as per GHG protocol</h6>
-                    </div>
-                <div className="solution-overlay">
-                  <div className="overlay-content">
-                    <h5>UPCYCLED PRODUCTS: A Strategy for Reducing Scope 3 GHG Emissions</h5>
-                    <ul>
-                      <li>Tech solution for End to End traceability from source to target</li>
-                       <li>Product Reduces scope 3 emissions as per guidelines of GHG protocol</li> 
-                      <li>Reduces landfills by single use plastic. Approximately 60 plastic bags saved from landfills by each 1Kg of material upcycled</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="button-container">
-                    <a href="#featured-products" className="btn">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Us Section */}
-      <section id="about-us" className="padding-large">
-        <div className="container-fluid">
-          <div className="row align-items-center justify-content-between g-5">
-            <div className="col-lg-6">
-              <div className="image-holder mb-4">
-                <img 
-                  src="/images/about-us.jpg" 
-                  alt="About AIVI" 
-                  className="img-fluid"
-                />
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="detail p-5">
-                <div className="display-header">
-                  <h2 className="display-2 text-uppercase text-dark pb-2">About Us</h2>
-                  <p className="pb-3">
-                    At AIVI , we believe that sustainability is not just a goal but a continuous journey. Our comprehensive ecosystem is designed to support businesses in adopting and enhancing their ESG strategies. From competitive analysis, ESG compliance check , IPCC carbon sequestration calculation , end-to-end traceability for responsible consumption, our solutions are tailored to meet the unique needs of each client. 
-                  </p>
-                  <p>
-                    Join us in our commitment to a greener, more sustainable world. Together, we can make a difference.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Featured Products Section */}
       <section id="featured-products" className="padding-large">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="section-header text-center mb-5">
-                <h2 className="display-3 text-uppercase">Our Circonomy Products</h2>
-                <p>Discover our handpicked selection of Single Use Plastic Upcycled Products </p>
+                <h2 className="display-3 text-uppercase">Premium Collection</h2>
+                <p>Discover our handpicked selection of premium granites.</p>
               </div>
             </div>
           </div>
@@ -420,7 +302,7 @@ const Home = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="section-header text-center mb-5">
-                <h2 className="display-3 text-uppercase">Latest Blog Posts</h2>
+                <h2 className="display-3 text-uppercase">Our Outlets</h2>
                 <p>Read our latest articles about sustainability and environmental initiatives</p>
               </div>
             </div>
@@ -478,7 +360,7 @@ const Home = () => {
                           </p>
                         </div>
                         <a href={post.link} className="read-more" target="_blank" rel="noopener noreferrer">
-                          Read More 
+                          View on Maps 
                         </a>
                       </div>
                     </div>
@@ -488,11 +370,42 @@ const Home = () => {
               </Swiper>
             </div>
           </div>
-          <div className="row mt-4">
+          {/* <div className="row mt-4">
             <div className="col-md-12 text-center">
               <a href="#blog" className="btn btn-medium btn-arrow">
-                <span className="text-uppercase">View All Posts</span>
+                <span className="text-uppercase"></span>
               </a>
+            </div>
+          </div> */}
+        </div>
+      </section>
+
+      {/* About Us Section */}
+      <section id="about-us" className="padding-large">
+        <div className="container-fluid">
+          <div className="row align-items-center justify-content-between g-5">
+            <div className="col-lg-6">
+              <div className="image-holder mb-4">
+                <img 
+                  src="/images/about-us.jpg" 
+                  alt="About AIVI" 
+                  className="img-fluid"
+                />
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="detail p-5">
+                <div className="display-header">
+                  <h2 className="display-2 text-uppercase text-dark pb-2">About Us</h2>
+                  <p className="pb-3">
+                  Golden Granites is a trusted name in the granite industry, offering premium-quality granites for retail, wholesale, and export. With godowns and outlets in Kishangarh and Vijayanagram and a factory outlet in Kishangarh, we ensure a seamless supply of a wide variety of granites.
+                  </p>
+                  <p>
+                  Committed to excellence, Golden Granites stands for superior craftsmanship, ethical sourcing, and customer satisfaction. Whether you're looking for exquisite slabs for a luxury project or bulk orders for large-scale developments, we deliver quality that speaks for itself.
+                  </p>
+                  <p><b>Experience the timeless beauty of granite with Golden Granites—where quality meets trust.</b></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
