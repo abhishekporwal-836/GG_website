@@ -296,13 +296,13 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Blog Section */}
-      <section id="blog" className="padding-large bg-light">
+{/* Blog Section */}
+<section id="blog" className="padding-large bg-light">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="section-header text-center mb-5">
-                <h2 className="display-3 text-uppercase">Our Outlets</h2>
+                <h2 className="display-3 text-uppercase">Latest Blog Posts</h2>
                 <p>Read our latest articles about sustainability and environmental initiatives</p>
               </div>
             </div>
@@ -312,15 +312,15 @@ const Home = () => {
               <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={30}
-                slidesPerView={3}
+                slidesPerView={1}
                 navigation={{
                   enabled: true,
-                  prevEl: '.swiper-button-prev',
-                  nextEl: '.swiper-button-next',
+                  prevEl: '.blog-swiper-button-prev',
+                  nextEl: '.blog-swiper-button-next',
                 }}
                 pagination={{ 
                   clickable: true,
-                  dynamicBullets: false
+                  el: '.blog-swiper-pagination'
                 }}
                 breakpoints={{
                   640: {
@@ -336,7 +336,7 @@ const Home = () => {
                 loop={true}
                 className="blog-swiper"
               >
-                {blogPosts.slice(0, 3).map(post => (
+                {blogPosts.map(post => (
                   <SwiperSlide key={post.id}>
                     <div className="blog-item">
                       <div className="image-holder position-relative">
@@ -360,23 +360,30 @@ const Home = () => {
                           </p>
                         </div>
                         <a href={post.link} className="read-more" target="_blank" rel="noopener noreferrer">
-                          View on Maps 
-                        </a>
-                      </div>
-                    </div>
+                      Read More
+                    </a>
+                  </div>
+                </div>
                   </SwiperSlide>
                 ))}
-                <div className="swiper-pagination"></div>
               </Swiper>
+              <div className="blog-swiper-button-prev"></div>
+              <div className="blog-swiper-button-next"></div>
+              <div className="blog-swiper-pagination"></div>
             </div>
           </div>
-          {/* <div className="row mt-4">
+          <div className="row mt-5">
             <div className="col-md-12 text-center">
-              <a href="#blog" className="btn btn-medium btn-arrow">
-                <span className="text-uppercase"></span>
+              <a 
+                href="#blog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-medium"
+              >
+                View All Posts
               </a>
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
 
