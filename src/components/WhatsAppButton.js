@@ -4,8 +4,8 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "917518678290";
-    const message = "Hi, I'm interested in your products!";
+    const phoneNumber = "919414436977";
+    const message = "Hi, I'm interested in your products! Can I more information about the products?";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
