@@ -183,7 +183,7 @@ const Home = () => {
       date: 'From 2021',
       image: '/images/blog-1.jpg',
       author: 'Factory Outlet Kishangarh',
-      link: 'https://maps.app.goo.gl/BsREGc8742TajCio8'
+      link: 'https://maps.app.goo.gl/MpdXc95ieJtaVTU97'
     },
     {
       id: 2,
@@ -192,7 +192,7 @@ const Home = () => {
       date: 'From 2022',
       image: '/images/blog-2.png',
       author: 'Retail Outlet Kishangarh',
-      link: 'https://maps.app.goo.gl/BsREGc8742TajCio8'
+      link: 'https://maps.app.goo.gl/MpdXc95ieJtaVTU978'
     },
     {
       id: 3,
@@ -201,7 +201,7 @@ const Home = () => {
       date: 'From 2025',
       image: '/images/blog-3.jpg',
       author: 'Retail Outlet Vijaynagra',
-      link: 'https://maps.app.goo.gl/BsREGc8742TajCio8'
+      link: 'https://maps.app.goo.gl/MpdXc95ieJtaVTU97'
     }
   ];
 
@@ -302,8 +302,8 @@ const Home = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="section-header text-center mb-5">
-                <h2 className="display-3 text-uppercase">Latest Blog Posts</h2>
-                <p>Read our latest articles about sustainability and environmental initiatives</p>
+                <h2 className="display-3 text-uppercase">Visit us at</h2>
+                <p>Here are our store locations.</p>
               </div>
             </div>
           </div>
@@ -360,7 +360,7 @@ const Home = () => {
                           </p>
                         </div>
                         <a href={post.link} className="read-more" target="_blank" rel="noopener noreferrer">
-                      Read More
+                      View on Map
                     </a>
                   </div>
                 </div>
