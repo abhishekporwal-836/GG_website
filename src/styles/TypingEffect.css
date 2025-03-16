@@ -33,14 +33,14 @@
 }
 
 .highlight {
-  color: #e3cc86;
+  color: #041329;
   font-size: 3.0rem;
   font-weight: 600;
   line-height: 1.4;
   padding-left: 5px;
   display: inline;
   text-decoration: underline;
-  text-decoration-color: #e3cc86;
+  text-decoration-color: #026b1e;
   text-underline-offset: 8px;
 }
 
@@ -56,7 +56,7 @@
 .typed-cursor {
   display: inline;
   font-size: 3.0rem;
-  color: #e3cc86;
+  color: #041329;
   line-height: 1.4;
   margin: 0;
   vertical-align: baseline;

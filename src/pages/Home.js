@@ -225,7 +225,7 @@ const Home = () => {
                   <div 
                     className="banner-item" 
                     style={{
-                      backgroundImage: `url(${require("../assets/images/home-back1.jpg")})`,
+                      backgroundImage: `url(${require("../assets/images/home-back.6.jpg")})`,
                     }}
                   >
                     <div className="typing-effect-container">
